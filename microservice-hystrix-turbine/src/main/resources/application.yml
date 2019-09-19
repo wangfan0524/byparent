@@ -1,0 +1,22 @@
+server:
+  port: 7910
+eureka:
+  client:
+    service-url:
+      # 采用curl的形式进行认证
+      defaultZone: http://admin:123456@localhost:8761/eureka
+    healthcheck:
+      enabled: true
+  instance:
+    # 默认使用主机名进行访问，如果想使用IP访问则启用prefer-ip-address
+    prefer-ip-address: true
+    # 自定义instance-id
+    instance-id: ${spring.application.name}:${server.port}
+
+spring:
+  application:
+    name: microservice-hystrix-turbine
+turbine:
+  aggregator:
+    cluster-config: MICROSERVICE-CONSUMER-USER-FEIGN
+  app-config: microservice-consumer-user-feign

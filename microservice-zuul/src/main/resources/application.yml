@@ -1,0 +1,33 @@
+server:
+  port: 8040
+eureka:
+  client:
+    service-url:
+      # 采用curl的形式进行认证
+      defaultZone: http://admin:123456@localhost:8761/eureka
+    healthcheck:
+      enabled: true
+  instance:
+    # 默认使用主机名进行访问，如果想使用IP访问则启用prefer-ip-address
+    prefer-ip-address: true
+    # 自定义instance-id
+    instance-id: ${spring.application.name}:${spring.application.instance-id:${server.port}}
+spring:
+  application:
+    name: microservice-zuul
+zuul:
+  routes:
+      microservice-provider-user: /user/**
+      microservice-upload: /upload/**
+      ignored-services: microservice-provider-user
+
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 5000
+ribbon:
+  ConnectTimeout: 3000
+  ReadTimeout: 60000

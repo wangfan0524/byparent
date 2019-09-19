@@ -1,0 +1,20 @@
+server:
+  port: 8761
+
+# 配置带有http-basic安全认证的注册中心，防止其他服务知道注册中心地址就可以随便注册进来
+security:
+  basic:
+    enabled: true
+  user:
+    name: admin
+    password: 123456
+eureka:
+  client:
+    service-url:
+      defaultZone: http://admin:123456@192.168.136.101:8761/eureka
+    # false表示不向注册中心注册自己
+    register-with-eureka: false
+    #false表示自己就是注册中心，职责是维护实例，不参加检索
+    fetch-registry: false
+    healthcheck:
+      enabled: true

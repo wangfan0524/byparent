@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="microservice-discover-eureka:war">
+    <output-path>$PROJECT_DIR$/microservice-discover-eureka/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>microservice-discover-eureka</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="microservice-discover-eureka-0.0.1-SNAPSHOT.war">
+      <element id="artifact" artifact-name="microservice-discover-eureka:war exploded" />
+    </root>
+  </artifact>
+</component>

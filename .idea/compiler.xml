@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="microservice-consumer-user" />
+        <module name="microservice-hystrix-dashbord" />
+        <module name="microservice-hystrix-turbine" />
+        <module name="microservice-provider-user" />
+        <module name="microservice-upload" />
+        <module name="microservice-consumer-user-ribbon" />
+        <module name="microservice-swagger" />
+        <module name="microservice-consumer-user-feign" />
+        <module name="microservice-zuul" />
+        <module name="microservice-discover-eureka" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="microservice-consumer-user" target="1.8" />
+      <module name="microservice-consumer-user-feign" target="1.8" />
+      <module name="microservice-consumer-user-ribbon" target="1.8" />
+      <module name="microservice-consumer-user-ribbon1" target="1.7" />
+      <module name="microservice-discover-eureka" target="1.8" />
+      <module name="microservice-hystrix-dashbord" target="1.8" />
+      <module name="microservice-hystrix-turbine" target="1.8" />
+      <module name="microservice-provider-user" target="1.8" />
+      <module name="microservice-spring-cloud" target="1.8" />
+      <module name="microservice-swagger" target="1.8" />
+      <module name="microservice-upload" target="1.8" />
+      <module name="microservice-zuul" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="microservice-consumer-user" options="" />
+      <module name="microservice-consumer-user-ribbon" options="" />
+      <module name="microservice-discover-eureka" options="" />
+      <module name="microservice-provider-user" options="" />
+    </option>
+  </component>
+</project>

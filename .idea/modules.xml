@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/microservice-consumer-user/microservice-consumer-user.iml" filepath="$PROJECT_DIR$/microservice-consumer-user/microservice-consumer-user.iml" />
+      <module fileurl="file://$PROJECT_DIR$/microservice-consumer-user-feign/microservice-consumer-user-feign.iml" filepath="$PROJECT_DIR$/microservice-consumer-user-feign/microservice-consumer-user-feign.iml" />
+      <module fileurl="file://$PROJECT_DIR$/microservice-consumer-user-ribbon/microservice-consumer-user-ribbon.iml" filepath="$PROJECT_DIR$/microservice-consumer-user-ribbon/microservice-consumer-user-ribbon.iml" />
+      <module fileurl="file://$PROJECT_DIR$/microservice-discover-eureka/microservice-discover-eureka.iml" filepath="$PROJECT_DIR$/microservice-discover-eureka/microservice-discover-eureka.iml" />
+      <module fileurl="file://$PROJECT_DIR$/microservice-hystrix-dashbord/microservice-hystrix-dashbord.iml" filepath="$PROJECT_DIR$/microservice-hystrix-dashbord/microservice-hystrix-dashbord.iml" />
+      <module fileurl="file://$PROJECT_DIR$/microservice-hystrix-turbine/microservice-hystrix-turbine.iml" filepath="$PROJECT_DIR$/microservice-hystrix-turbine/microservice-hystrix-turbine.iml" />
+      <module fileurl="file://$PROJECT_DIR$/microservice-provider-user/microservice-provider-user.iml" filepath="$PROJECT_DIR$/microservice-provider-user/microservice-provider-user.iml" />
+      <module fileurl="file://$PROJECT_DIR$/microservice-spring-cloud.iml" filepath="$PROJECT_DIR$/microservice-spring-cloud.iml" />
+      <module fileurl="file://$PROJECT_DIR$/microservice-swagger/microservice-swagger.iml" filepath="$PROJECT_DIR$/microservice-swagger/microservice-swagger.iml" />
+      <module fileurl="file://$PROJECT_DIR$/microservice-upload/microservice-upload.iml" filepath="$PROJECT_DIR$/microservice-upload/microservice-upload.iml" />
+      <module fileurl="file://$PROJECT_DIR$/microservice-zuul/microservice-zuul.iml" filepath="$PROJECT_DIR$/microservice-zuul/microservice-zuul.iml" />
+    </modules>
+  </component>
+</project>
